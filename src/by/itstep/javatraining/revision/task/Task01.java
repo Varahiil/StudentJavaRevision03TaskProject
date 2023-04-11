@@ -23,6 +23,9 @@ package by.itstep.javatraining.revision.task;
 
 public class Task01 {
     public static boolean task01(int x, int y) {
-        return false;
+        if (x < 1 || x > 8 || y < 1 || y > 8) {
+            return false;
+        }
+        return (x + y) % 2 == 0;
     }
 }
