@@ -27,6 +27,7 @@ public class Task05 {
             return false;
         }
 //        return (x1 - x2) % 2 != 0 && (y1 - y2) % 2 != 0 || (x1 - x2) % 2 == 0 && (y1 - y2) % 2 == 0;
+
         int ax = Math.abs(x1 - x2);
         int ay = Math.abs(y1 - y2);
         return ax == ay;

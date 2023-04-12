@@ -23,6 +23,12 @@ package by.itstep.javatraining.revision.task;
 
 public class Task07 {
     public static boolean task07(int x1, int y1, int x2, int y2) {
-        return false;
+        if (x1 < 1 || x1 > 8 || x2 < 1 || x2 > 8 || y1 < 1 || y1 > 8 || y2 < 1 || y2 > 8 || x1 == x2 && y1 == y2) {
+            return false;
+        }
+        int ax = Math.abs(x1 - x2);
+        int ay = Math.abs(y1 - y2);
+
+        return x1 == x2 || y1 == y2 || ax == ay;
     }
 }
